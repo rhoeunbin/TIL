@@ -11,4 +11,4 @@
 
 ✔3일차 220707
 
-- [GitHub Branch](https://github.com/rhoeunbin/TIL/tree/master/Day3)
+- [GitHub Branch](https://github.com/rhoeunbin/TIL/blob/master/Day3/github%EC%A0%95%EB%A6%AC2.md)
