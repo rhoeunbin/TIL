@@ -44,9 +44,7 @@ cmd면 `cls`
 
 bash면 `cntl+L`
 
-
-
-![정리](github정리2.assets/정리.png)
+![정리](C:\Users\shgus\OneDrive\Desktop\정리.png)
 
 ### Git Clone
 
@@ -94,9 +92,13 @@ $ git pull origin master #clone한 것의 업데이트 받아옴
 
 > Git을 활용하여 협업하는 흐름으로 branch를 활용하는 전략
 
-그린 사진 첨부
+![정리2](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리2.png)
 
 ### Git Branch
+
+> 독립적인 버전을 만들기 위해서(목적)
+
+![정리4](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리4.png)
 
 - 주요 명령어
 
@@ -112,7 +114,8 @@ $ git pull origin master #clone한 것의 업데이트 받아옴
   (master) $ git branch -d {branch name}  # 브랜치 삭제
   ```
 
-  
+
+
 
 - 순서
 
@@ -130,7 +133,7 @@ $ git log --oneline (example이 없어짐) example로 돌아가면 두 개의 �
 $ git checkout example (master에 있던 것까지 보임)
 ```
 
-git branch -d 브랜치이름 : 브랜치 삭제
+
 
 ---
 
@@ -141,6 +144,12 @@ git branch -d 브랜치이름 : 브랜치 삭제
 ```   bash
 $ git merge branchname (example) #병합
 ```
+
+![정리3](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리3.png)
+
+*병합 후엔  branch 삭제하기(master가 아닌 다른 브랜치)*
+
+`git branch -d 브랜치이름` : 브랜치 삭제
 
 
 
@@ -156,36 +165,74 @@ log는 아님(아직 커밋 안 함)
 
 
 
-3상황 master에 있던 readme를 다른 브랜치에서 수정==== 각자 커밋이 있는데 같은 파일 수정한 것
+> 상황 1.  fast-forward
 
--master에 있는 readme를 feature/test에서 수정 후 checkout master로 와서 master에서 git add .
+- 다른 브랜치를 생성 및 이동
+- init, add. , commit, log 작업 후 git checkout master
+- master에 병합하기
 
- 하기 > 충돌 발생
 
-3 상황에서 충돌 발생하면
 
+> 상황 2. merge commit (서로 다른 파일이 수정되어 있는 상황)
+
+- 다른 브랜치를 생성 및 이동
+- init, add. , commit, log 작업 후 git checkout master
+- master에 추가 후 commit 발생시킨 후 master에 merge 하기
+
+
+
+> 상황 3. master에 있던 readme를 다른 브랜치에서 수정==== 각자 커밋이 있는데 같은 파일의 동일한 부분을 수정한 것
+
+-master에 있는ㅇ황 readme를 feature/test(브랜치이름)에서 수정 후 checkout master로 와서 master에서 git add .하기 → 충돌 발생
+
+
+
+충돌 발생(merge conflict 발생 )하면
+
+```bash
+(master) $ git merge feature/test 
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+```bash
 git status
 
 git add .
 
-git commit 메세지창 닫으면 merging 사라짐
+git commit #메세지창 닫으면 merging 사라짐
+```
 
-git log 결과는 2번째와 같음
+
+
+**git log 결과는 상황2와 같음**
 
 충돌을 고쳐서 commit enter 했다
 
+---
 
 
 
+#### Fork&Pull Request
 
-pull&fork 
+- fork 방법
+  1.  GitHub에서 fork 누르기
+  2. 저장될 원격저장소 이름 확인하고 자신의 원격저장소에서 확인
+  3. clone하고 branch 생성
+  4. 해당 폴더에 내용 추가하고 커밋 후 push 하기
+  5. create&pull request 하기
 
-master가 아니면 merge 불가능
-
-fork해서 만든 것은 origin이 본인이다 master 아님
 
 
+✔master가 아니면 merge 불가능
 
-vs code 는 지워져도 cntl+z 가능
+fork해서 만든 것은 origin이 본인이다 (master 아님)
 
-git restore <파일이름> : 이전 상태로 돌아가기
+
+
+✔vs code 는 지워져도 cntl+z 가능
+
+
+
+`git restore <파일이름>` : 이전 상태로 돌아가기
