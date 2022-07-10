@@ -44,7 +44,7 @@ cmd면 `cls`
 
 bash면 `cntl+L`
 
-![정리](C:\Users\shgus\OneDrive\Desktop\정리.png)
+![정리](github정리2.assets/정리.png)
 
 ### Git Clone
 
@@ -92,13 +92,15 @@ $ git pull origin master #clone한 것의 업데이트 받아옴
 
 > Git을 활용하여 협업하는 흐름으로 branch를 활용하는 전략
 
-![정리2](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리2.png)
+![정리2](github정리2.assets/정리2.png)
+
+
 
 ### Git Branch
 
 > 독립적인 버전을 만들기 위해서(목적)
 
-![정리4](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리4.png)
+![정리4](github정리2.assets/정리4.png)
 
 - 주요 명령어
 
@@ -145,7 +147,7 @@ $ git checkout example (master에 있던 것까지 보임)
 $ git merge branchname (example) #병합
 ```
 
-![정리3](C:\Users\shgus\OneDrive\Desktop\TIL\Day3\github정리2.assets\정리3.png)
+![정리3](github정리2.assets/정리3.png)
 
 *병합 후엔  branch 삭제하기(master가 아닌 다른 브랜치)*
 
