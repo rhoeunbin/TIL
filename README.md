@@ -19,5 +19,5 @@
 
 ✔220711
 
-- [Python기초]()
+- [Python기초](https://github.com/rhoeunbin/TIL/blob/master/220711/Python%EC%A0%95%EB%A6%AC.md)
 - [codeup알고리즘]()
