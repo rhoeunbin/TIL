@@ -1,6 +1,6 @@
 ## Python
 
-컴퓨터(Computer = Calculation + Remember)
+>  컴퓨터(Computer = Calculation + Remember)
 
 프로그래밍( programming- 명령어의 모음(집합) )
 
@@ -51,6 +51,8 @@ $ python hello.py  #입력 후 실행
   - 문장을 구분할 때, 들여쓰기를 사용
   - 들여쓰기를 할 때는 4칸(space키 4번) 혹은 1탭(Tab 키 1번) →일관성 있게 사용
 
+---
+
 ### 변수 (이름)
 
 - 컴퓨터 메모리 어딘가에 저장되어 있는 개체를 참조하기 위해 사용되는 이름
@@ -84,8 +86,6 @@ print(a+b)  #8
 a = 'hello'
 print(a)   # 'hello'
 ```
-
-
 
 - type()
   - 변수에 할당된 값의 타입
@@ -182,11 +182,7 @@ None
     #2. math 모듈 사용
     ```
 
-
-
-
-
-
+---
 
 
 
@@ -208,7 +204,7 @@ None
 
 비교 연산자
 
-
+---
 
 ### 문자열
 
