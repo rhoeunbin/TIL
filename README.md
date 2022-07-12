@@ -21,3 +21,7 @@
 
 - [Python기초](https://github.com/rhoeunbin/TIL/blob/master/220711/Python%EC%A0%95%EB%A6%AC.md)
 - [codeup알고리즘](https://github.com/rhoeunbin/TIL/commit/a59f4af79c7bd375b6dd686cc6ca9edea1eb4ef7#diff-072a6211ca95f5796ff2ace2f1da3e07704b5d831f4984395c063b40ea9cac27)
+
+✔220712
+
+- [Python조건문,반복문](https://github.com/rhoeunbin/TIL/blob/master/220711/Python%EC%A0%95%EB%A6%AC.md)
