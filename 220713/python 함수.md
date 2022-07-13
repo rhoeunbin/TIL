@@ -317,4 +317,5 @@ print(new_numbers)   #[20, 30, 40]
 
 #### 오늘 배운 것 한눈에 정리
 
-![화면 캡처 2022-07-07 175335](./python 함수.assets/화면 캡처 2022-07-07 175335-16577248720857.png)
+[그림](https://github.com/rhoeunbin/TIL/blob/master/220713/python%20%ED%95%A8%EC%88%98.assets/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-07-07%20175335.png)
+
