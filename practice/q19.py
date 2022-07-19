@@ -7,7 +7,7 @@ number = 123
 
 cnt =0
 while number !=0:
-    number =number // 10
+    number =number // 10 #반복마다 10의 정수로 나누기
     cnt += 1
 print(cnt)
 
