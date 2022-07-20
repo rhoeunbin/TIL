@@ -47,3 +47,7 @@
 🤭220719
 
 - [Python OOP](https://github.com/rhoeunbin/TIL/blob/master/220719/OOP.md)
+
+😆220720
+
+- [Python Method](https://github.com/rhoeunbin/TIL/blob/master/220720/python%EB%A9%94%EC%86%8C%EB%93%9C.md)
