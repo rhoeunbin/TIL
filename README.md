@@ -40,6 +40,10 @@
 
 - [Python 모듈](https://github.com/rhoeunbin/TIL/blob/master/220715/python%EB%AA%A8%EB%93%88.md)
 
+
+
+
+
 😆220718
 
 - [Python에러,예외](https://github.com/rhoeunbin/TIL/blob/master/220718/python%EC%97%90%EB%9F%AC_%EC%98%88%EC%99%B8.md)
@@ -60,6 +64,12 @@
 
 - [Python API](https://github.com/rhoeunbin/TIL/blob/master/220722/%ED%8C%8C%EC%9D%B4%EC%8D%ACAPI.md)
 
+😗220721
+
+- [프로젝트2](https://github.com/rhoeunbin/01-PJT-02/tree/main/2%ED%9A%8C%EC%B0%A8/%EB%85%B8%EC%9D%80%EB%B9%88)
+
+
+
 😗220725
 
 - [Algorithm정리](https://github.com/rhoeunbin/TIL/blob/master/220725/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
@@ -71,3 +81,11 @@
 😭220727
 
 - [알고리즘_문자열](https://github.com/rhoeunbin/TIL/blob/master/220727/%EB%AC%B8%EC%9E%90%EC%97%B4(String).md)
+
+😂220729
+
+- [알고리즘 딕셔너리](https://github.com/rhoeunbin/TIL/blob/master/220728/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%7BDictionary%7D.md)
+
+😭220730
+
+- [프로젝트3](https://github.com/rhoeunbin/01-PJT-03/commit/a21f1f85400e6475404e0c9f495237eeff9defae)
