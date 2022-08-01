@@ -17,7 +17,7 @@
 
 😛220708
 
-- 
+- [기업특강-채용공고리서치](https://github.com/rhoeunbin/job-research)
 
 😳220711
 
@@ -89,3 +89,12 @@
 😭220730
 
 - [프로젝트3](https://github.com/rhoeunbin/01-PJT-03/commit/a21f1f85400e6475404e0c9f495237eeff9defae)
+
+
+
+😂
+
+220801
+
+- [Python 스택,큐](https://github.com/rhoeunbin/TIL/blob/master/220801/%EC%8A%A4%ED%83%9D%2C%ED%81%90(Stack%2C%20Queue).md)
+
