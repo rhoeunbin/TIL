@@ -92,9 +92,10 @@
 
 
 
-😂
+😂220801
 
-220801
+- [Python Stack&Queue](https://github.com/rhoeunbin/TIL/blob/master/220801/%EC%8A%A4%ED%83%9D%2C%ED%81%90(Stack%2C%20Queue).md)
 
-- [Python 스택,큐](https://github.com/rhoeunbin/TIL/blob/master/220801/%EC%8A%A4%ED%83%9D%2C%ED%81%90(Stack%2C%20Queue).md)
+🤭220802
 
+- [Ptyhon Heap&Set](https://github.com/rhoeunbin/TIL/blob/master/220802/%ED%9E%99(Heap)%26%EC%85%8B(Set).md)
