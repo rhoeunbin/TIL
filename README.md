@@ -98,4 +98,9 @@
 
 🤭220802
 
-- [Ptyhon Heap&Set](https://github.com/rhoeunbin/TIL/blob/master/220802/%ED%9E%99(Heap)%26%EC%85%8B(Set).md)
+- [Python Heap&Set](https://github.com/rhoeunbin/TIL/blob/master/220802/%ED%9E%99(Heap)%26%EC%85%8B(Set).md)
+
+😂220803
+
+- [Python 이차원리스트](https://github.com/rhoeunbin/TIL/blob/master/220803/%EC%9D%B4%EC%B0%A8%EC%9B%90%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+
