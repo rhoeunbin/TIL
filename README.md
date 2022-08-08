@@ -107,3 +107,9 @@
 😭220804
 
 - [Python 순회](https://github.com/rhoeunbin/TIL/blob/master/python/220804/%EC%88%9C%ED%9A%8C.md)
+
+
+
+🤭220808
+
+- [Python완전탐색](https://github.com/rhoeunbin/TIL/blob/master/python/220808/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89.md)
