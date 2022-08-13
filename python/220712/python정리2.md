@@ -87,6 +87,10 @@ else :
 #### 조건 표현식
 
 ```python
+#<true인 경우 값> if <expression> else <false인 경우 값>
+```
+
+```python
 num = -10
 
 #1. 양수면 그대로
@@ -169,7 +173,7 @@ print(result)
 
 #### for 문
 
-- 시퀀스(string, tuple, list, range)를 포함한 반복가능한 객체를 모두 순화하면 종료(별도의 종료조건이 필요없다)
+- 시퀀스(string, tuple, list, range)(순서  o)를 포함한 반복 가능한 객체를 모두 순화하면 종료(별도의 종료 조건이 필요 없다)
 
 ```python
 for <변수명> in <iterable> :
@@ -186,6 +190,10 @@ for char in chars:
     #i
 ```
 
+
+
+#### 문자열 순회
+
 ```python
 #range를 활용하여 한 글자씩 출력
 chars = input()
@@ -200,6 +208,8 @@ for idx in range(len(chars)) # 0부터 원하는 숫자까지(idx = index)
 
 
 
+
+
 #### 딕셔너리 순회
 
 - 기본적으로 key를 순회하며, key를 통해 값을 활용
@@ -207,7 +217,7 @@ for idx in range(len(chars)) # 0부터 원하는 숫자까지(idx = index)
 ```python
 grades = {'john':80, 'eric' : 90}
 for name in grades: 
-    print(name)        #키 데이터만 나옴 john eric
+    print(name)        #키 출력  john eric
     
     print(name, grades[name])  #john 80 eric 90
     #1 print('john',grades[john])
