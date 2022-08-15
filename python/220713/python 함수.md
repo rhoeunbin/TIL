@@ -1,6 +1,14 @@
-### python 함수(function)
+# 함수(function)
+
+> Decomposition : 기능을 분해하고 재사용 가능
+>
+> Abstraction : 추상화
 
 > input을 주면 output이 나오는 것
+
+**코드 중복 방지, 재사용 용이**
+
+### len()
 
 ```python
 word = 'happy!'
@@ -9,12 +17,20 @@ for char in word:
     count = count+1     #len(happy!)
 ```
 
+
+
+### sum()
+
 ```python
 numbers = [3, 10 ,20]
 result = 0
 for number in numbers :
     result += number        #sum([3, 10, 20])
 ```
+
+
+
+ 
 
 
 
@@ -50,7 +66,7 @@ def function_name
     return returnin_value
 ```
 
-*코드 중복 방지, 재사용 용이*
+
 
 #### 선언 및 호출
 
@@ -130,7 +146,15 @@ print(a, type(a))
 #출력만 해주고, return 값은 없다 
 ```
 
----
+
+
+#### return vs print
+
+return은 함수 안에서 값을 반환하기 위해 사용되는 키워드
+
+print는 출력을 위해 사용되는 함수
+
+
 
 ### 함수의 입력(Input)
 
@@ -160,7 +184,7 @@ func('fruit')   #argument: 'fruit'
 
 ```python
 def add(a,b):    add(3,4)
-    return a+b
+    return a+b   add(a=3, b=5)
 ```
 
 
@@ -208,14 +232,17 @@ print ('hi', 'hello', sep='-')
 def my_add(*numbers) :             #*args
     #내부적으로 numbers가 tuple
     return numbers
-result=my_add(1,2,3)
-print(result, type(result))  #튜플 : 값을 변경할 수 없다
+
+result = my_add(1,2,3)
+print(result, type(result))  #(1,2,3)<class 'tuple'>
+#튜플 : 값을 변경할 수 없다
 
 #정해지지 않은 개수의 keyword argus
 def my_func(**kwargs):
     return kwargs
 result=my_func(name='길동', age='100', gender='M')
-print(result, type(result))  #딕셔너리
+print(result, type(result))  #(name='길동', age='100', gender='M') <class 'dict'>
+#딕셔너리
 
 ```
 
@@ -247,7 +274,7 @@ print(a)
 
 ```python
 sum= 5
-print(sum[1,2,3])
+print(sum[1,2,3])  #=> 오류 발생
 #bulit-in scope에 sum 함수가 있었음
 #global scope에 sum이름의 변수를 만들었음
 #찾을때 L→E→G→B Rule 순서로 이름 찾아냄
@@ -315,7 +342,5 @@ print(new_numbers)   #[20, 30, 40]
 
 
 
-#### 오늘 배운 것 한눈에 정리
 
-![](https://github.com/rhoeunbin/TIL/blob/master/220713/python%20%ED%95%A8%EC%88%98.assets/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-07-07%20175335.png)
 
