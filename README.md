@@ -113,3 +113,21 @@
 🤭220808
 
 - [Python완전탐색](https://github.com/rhoeunbin/TIL/blob/master/python/220808/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89.md)
+
+
+
+## Database
+
+### SQL
+
+- [CRUD](https://github.com/rhoeunbin/TIL/blob/master/Database/220816/Database.md) (220816)
+  - [01 실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220816/01%EC%8B%A4%EC%8A%B5.md)
+
+- [WHERE, 집계함수, LIKE](https://github.com/rhoeunbin/TIL/blob/master/Database/220817/sql%EC%A0%95%EB%A6%AC2.md) (220817)
+  - [02 실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220817/02%EC%8B%A4%EC%8A%B5.md)
+- [GROUP BY, ALTER TABLE](https://github.com/rhoeunbin/TIL/blob/master/Database/220818/sql%ED%95%A8%EC%88%98.md) (220818)
+  - [03 실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220818/03%EC%8B%A4%EC%8A%B5.md)
+
+- [CASE, 서브쿼리](https://github.com/rhoeunbin/TIL/blob/master/Database/220819/CASE.md) (220819)
+  - [04 실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220819/04_%EC%8B%A4%EC%8A%B5.md)
+
