@@ -1,20 +1,67 @@
 ## Namespace
 
-- 개체를 구분할 수 있는 범위를 나타내는namespace에 대한 이해
+> 개체를 구분할 수 있는 범위를 나타내는namespace에 대한 이해
 
-URL namespace를 사용하면 서로 다른 앱에서 동일한 URL 이름을 사용하는 경우에도 이름이 지정된 URL을 고유하게 사용 가능
+- URL namespace를 사용하면 서로 다른 앱에서 동일한 URL 이름을 사용하는 경우에도 이름이 지정된 URL을 고유하게 사용 가능
 
-app_name attribute를 사용해 지정 가능
+- **app_name** attribute를 작성해 URL namespace 설정
 
 
 
-url 태그의 변화
+```python
+# articles/urls.py
+app_name = 'articles'
+urlpatterns = [
+...,
+]
+```
 
+ ↓
+
+```python
+# pages/urls.py
+app_name = 'pages'
+urlpatterns = [
+...,
+]
+```
+
+
+
+### url 태그의 변화
+
+```django
  {% url 'index' %} => {% url 'articles:index' %}
+```
 
 
 
-Template namespace
+- `:` 연산자를 사용하여 지정 
+  -  app_name이 articles이고 URL name이 index인 주소 참조는 articles:index가 됨
+
+
+
+### Naming URL patterns
+
+```python
+urlpatterns = [
+path('index/', views.index, name='index'),
+path('greeting/', views.greeting, name='greeting'),
+path('dinner/', views.dinner, name='dinner'),
+path('throw/', views.throw, name='throw'),
+]
+```
+
+
+
+### Built-in tag - "url"
+
+```django
+{% url '' %}
+```
+
+- 주어진 URL 패턴 이름 및 선택적 매개 변수와 일치하는 절대 경로 주소를 반환
+- 템플릿에 URL을 하드 코딩하지 않고도 DRY 원칙을 위반하지 않으면서 링크를 출력하는 방법
 
 
 

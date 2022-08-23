@@ -1,38 +1,34 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
-matrix = [list(map(str,input().split())) for _ in range(n)]
+N = int(input()) #방의 크기
 
-row = 0 # 가로
-col = 0 # 세로
+room = [list(map(str,input())) for _ in range(N)] 
 
-for y in range(n):
-    cnt = 0
-    for x in range(n):
-        if matrix[y][x] == '.':
-            cnt += 1
-        elif matrix[y][x] == 'X':
-            if cnt >= 2:
-                row += 1
-            cnt = 0
-    if cnt >= 2:
-        row += 1
-    cnt = 0
+cnt_row, cnt_col = 0,0
+row,col = 0,0  #가로, 세로자리
 
-for x in range(n):
-    cnt = 0
-    for y in range(n):
-        if matrix[y][x] == '.':
-            cnt += 1
-        elif matrix[y][x] == 'X':
-            if cnt >= 2:
-                col += 1
-            cnt = 0
-    if cnt >= 2:
-        col += 1
-    cnt = 0
+for i in range(N):   
+    cnt_row = 0 # 누울 자리 count
+    for j in range(N):
+        if room[i][j]== '.':
+            cnt_row += 1 # . 이 있으면 +1
+        else : # .이 아니라면
+            cnt_row = 0 
+        if cnt_row == 2: # .이 두 개면
+            row += 1 # 가로 +1
+            
 
-print(row, col)
+for i in range(N):
+    cnt_col = 0
+    for j in range(N):
+        if room[j][i] =='.':
+            cnt_col += 1
+        else :
+            cnt_col = 0
+        if cnt_col == 2:
+            col += 1    
+            
+print(row ,col)   
 
 

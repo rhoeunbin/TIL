@@ -50,3 +50,4 @@ for num in range(1, 11):
         print(f'#{num}', ans)
     else:
         print(f'#{num}', ans)
+

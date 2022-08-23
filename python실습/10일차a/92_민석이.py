@@ -20,3 +20,4 @@ for num in range(1, int(input()) + 1):
     stu_p = set(map(int, input().split()))
 
     print(f'#{num}', *stu - stu_p)
+

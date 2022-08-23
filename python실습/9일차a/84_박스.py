@@ -13,7 +13,7 @@ for _ in range(t):
     print(sum(cnt_0))
 
 
-    T = int(input())
+T = int(input())
 for test_case in range(T):
     m, n = map(int, input().split())
     box = [list(map(int, input().split())) for i in range(m)]

@@ -58,21 +58,25 @@ javascript → 동작
 
 ### HTML 기본구조
 
-- html : 문서의 최상위(root) 요소
-- head : 문서 **메타데이터** 요소 (메타데이터 : 데이터를 위한 데이터)
+- `<html>` : 문서의 최상위(root) 요소, HTML 문서의 시작과 끝
+- `<head>` : 문서 **메타데이터** 요소 (메타데이터 : 데이터를 위한 데이터) - 요약 정보
   - 문서 제목, 인코딩, 스타일, 외부 타일 로딩
   - 일반적으로 브라우저에 나타나지 않는 내용
-- body : 문서 본문 요소
+- `<body>` : 문서 본문 요소(눈에 보이는 정보)
   - 실제 화면 구성과 관련된 내용
 
 
 
 ```html
 <!DOCTYPE html>
+<!-- HTML5 라는 신조어로 문서 선언하는 태그-->
+
 <html lang="en">
 	<head>
-    <meta charset="UTF-8"
-          <title>Document - 명시적으로 알려주기 위해 활용</title>
+    	<meta charset="UTF-8">
+    	<!-- character setting의 약자를 나타내는 문자 코드, 모든 문자를 웹 브라우저에서 깨짐 없이 표시-->
+        <title>Document -명시적으로 알려주기 위해 활용</title>
+        <!-- 웹사이트 탭에 나타나는 제목을 적는 태그 -->
     </head>
 	<body>
     	HTML 기초
@@ -168,7 +172,21 @@ javascript → 동작
 
 ```html
 <!-- a태그(=enter)(anchor) a누르고 enter하면 나옴 -->
-<a href="링크"></a>
+<a href="링크" target = "_blank">네이버</a>
+```
+
+- `<a>` : 다른 사이트로 이동시키는 태그
+- href 속성 : HTML 연결할 페이지의 주소 지정
+- target 속성 : 어떤 방식으로 페이지로 이동할지 결정
+- `"_blank"` :  새 탭을 띄워서 웹사이트를 전환
+- `"_self"` : 현재 탭에서 웹사이트를 전환(디폴트 값)
+
+
+
+```html
+<!-- a태그(=enter)(anchor) a누르고 enter하면 나옴 , 다른 사이트로 이동시키는 태그/ href 속성 : HTML 연결할 페이지의 주소 지정 -->
+<a href="링크" target = "_blank">네이버</a>
+
 <b>굵은글씨</b>
 <strong>굵게 강조(일종의 h1) </strong>
 <i>이텔릭</i>
@@ -279,3 +297,6 @@ id는 잘 활용하지 않고, 자바스크립트(JS)로 개발할 때 보통 �
 
 
 
+!important 우선순위 무시, 꼭 적용하고 싶은 속성이 있다면 속성 뒤에 붙이기
+
+color:black !important

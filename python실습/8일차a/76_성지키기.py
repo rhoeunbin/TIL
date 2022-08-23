@@ -1,11 +1,3 @@
-n, m = map(int,input().split())
-
-for x in range(n):
-    for y in range(m):
-        
-
-
-
 N, M = map(int, input().split())
 
 matrixR = [list(input()) for _ in range(N)]
@@ -23,6 +15,7 @@ for j in range(M):
 print(max(result1, result2))
 
 
+#
 n, m = map(int, input().split())
 matrix = []
 
