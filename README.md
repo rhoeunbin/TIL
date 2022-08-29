@@ -116,9 +116,7 @@
 
 
 
-## Database
-
-### SQL
+## Database - SQL
 
 - [CRUD](https://github.com/rhoeunbin/TIL/blob/master/Database/220816/Database.md) (220816)
   - [01 실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220816/01%EC%8B%A4%EC%8A%B5.md)
@@ -134,7 +132,11 @@
 - [JOIN](https://github.com/rhoeunbin/TIL/blob/master/Database/220822/JOIN.md)(220822)
   - [05_실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220822/05_%EC%8B%A4%EC%8A%B5.md)
 
-- 
+- [모델링](https://github.com/rhoeunbin/TIL/blob/master/Database/220823/%EB%AA%A8%EB%8D%B8%EB%A7%81.md)(220823)
+- [ORM](https://github.com/rhoeunbin/TIL/blob/master/Database/220824/ORM.md)(220824)
+  - [07_실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220824/DB_07.md)
+- [QuerySet](https://github.com/rhoeunbin/TIL/blob/master/Database/220825/QuerySet%20API.md)(220825)
+  - [08_실습](https://github.com/rhoeunbin/TIL/blob/master/Database/220825/DB_08.md)
 
 
 
