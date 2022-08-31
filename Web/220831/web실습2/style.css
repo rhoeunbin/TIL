@@ -1,0 +1,40 @@
+/* 아래에 CSS를 작성해주세요. */
+.card{
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-image{
+  width : 300px;
+  border-radius: 1rem;
+}
+
+.app{
+  text-align: left;
+  color:#A4A4A4;
+  font-size:9pt;
+  margin-left: 5px;
+}
+.name{
+  margin-left: 5px;
+}
+.price_{
+  text-align: left;
+  margin-left: 5px;
+}
+.dis{
+  color:#58D3F7;
+  font-size: 16pt;
+}
+.price{
+  font-size: 16pt;
+  
+}
+.rate_{
+  text-align: left;
+  margin-left: 5px;
+}
+.review{
+  color:#A4A4A4;
+}

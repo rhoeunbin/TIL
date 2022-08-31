@@ -1,0 +1,49 @@
+/* 아래에 CSS를 작성해주세요. */
+.title{
+  text-align: center;
+}
+.subtitle{
+  display:block;
+  font-size:12px;
+}
+.cards{
+  display: flex;
+  width: 900px;
+  margin: auto ;
+}
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  height:300px;
+  margin-right: 15px; 
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.in{
+  text-align :left;
+  font-size: 11px;
+  color: gray;
+  margin: 2px;
+}
+.content{
+  margin-left: 15px;
+  letter-spacing : -1.4px;
+}
+.name{
+  font-size: 1.1rem;
+  margin: 2px;
+}
+
+.ex {
+  box-sizing: border-box;
+  display:block;
+  color: gray;
+  font-size: 11px;
+  margin-bottom :3px;
+}
+.card-image{
+  width: 100%;
+  margin: 10px;
+  border-radius: 1rem;
+}
