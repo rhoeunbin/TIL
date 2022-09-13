@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>show</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body class="bg-dark bg-opacity-10">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 col-lg-1">
+            <a class="navbar-brand" href="02_home.html">
+              <img src="./images/logo.png" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-9 col-lg-11 text-end text-lg-start my-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="02_home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="03_community.html">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog text-dark">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Summit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>           
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-warning bg-gradient bg-opacity-10 p-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5 mt-0 align-items-center">
+          <img class="m-0 shadow-lg px-0 rounded" src="./images/movie1.jpg">
+          <div class="m-0">
+            <h1 class="fw-bolder display-4 animate__animated animate__flash">쇼생크 탈출</h1>
+            <p class="fw-bolder mb-5"><span class="text-decoration-line-through">$15.00</span> $7.00</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi necessitatibus quaerat, fugiat obcaecati distinctio rerum delectus, laudantium veritatis eaque maiores iure, ducimus ut suscipit nesciunt. Ut, animi beatae nihil, quidem aspernatur quos ratione pariatur consequuntur dolor atque consectetur voluptates, incidunt iste vel perspiciatis ex? Nobis deleniti facere iure odit cum.</p>
+            <div class="d-flex">
+              <input class="form-control text-center me-3" type="num" value="1" aria-label="readonly input example" readonly style="max-width: 3rem;">
+              <button type="button" class="btn btn-outline-dark d-flex align-items-center p-2"><i class="bi bi-cart-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                &nbsp;&nbsp;Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container pt-5">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4 my-5 d-flex justify-content-between">
+        <div class="col mb-5 px-4 ps-3">
+          <div class="card h-100 shadow">
+            <a href="#"><img src="./images/movie2.jpg" class="card-img-top" alt="..." style="height: 400px"></a>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mt-2">죽은 시인의 사회</h5>
+              <p class="card-text">$7.00</p>
+            </div>
+            <div class="card-footer bg-white text-center border-top-0 p-4 pt-2">
+              <button type="button" class="btn btn-outline-dark">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5 px-4">
+          <div class="card h-100 shadow">
+            <div>
+              <a href="#"><img src="./images/movie3.jpg" class="card-img-top" alt="..." style="height: 400px"></a>
+              <div class="position-absolute top-0 end-0 bg-danger text-light m-2 rounded px-2 fw-bold f-6">Sale</div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mt-2">다크 나이트 라이즈</h5>
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+              <p class="card-text"><span class="text-decoration-line-through">$15.00</span> $7.00</p>
+            </div>
+            <div class="card-footer bg-white text-center border-top-0 p-4 pt-2">
+              <button type="button" class="btn btn-outline-dark">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5 px-4">
+          <div class="card h-100 shadow">
+            <div>
+              <a href="#"><img src="./images/movie4.jpg" class="card-img-top" alt="..." style="height: 400px"></a>
+              <div class="position-absolute top-0 end-0 bg-danger text-light m-2 rounded px-2 fw-bold f-6">Sale</div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mt-2">그랜드 부다페스트 호텔</h5>
+              <p class="card-text"><span class="text-decoration-line-through">$15.00</span> $7.00</p>
+            </div>
+            <div class="card-footer bg-white text-center border-top-0 p-4 pt-2">
+              <button type="button" class="btn btn-outline-dark">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5 px-4 pe-2">
+          <div class="card h-100 shadow">
+            <a href="#"><img src="./images/movie5.jpg" class="card-img-top" alt="..." style="height: 400px"></a>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mt-2">her</h5>
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+              <p class="card-text">$15.00</p>
+            </div>
+            <div class="card-footer bg-white text-center border-top-0 p-4 pt-2">
+              <button type="button" class="btn btn-outline-dark">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="border-top bg-dark text-light p-3">
+      <p class="text-center mt-2 fw-bold">Web bootstrap PJT, by Rhoeunbin, Leeyonghwan</p>
+    </footer>
+  </body>
+</html>
