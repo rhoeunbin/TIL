@@ -516,21 +516,111 @@ console.log(numbers.length) // 5
 - `array.reverse()` 
   -  원본 배열의 요소들의 순서를 반대로 정렬
 
+- `array.push() `
+  - 배열의 가장 뒤에 요소 추가 
+- `array.pop() `
+  - 배열의 마지막 요소 제거
+- `array.unshift()` 
+  -  배열의 가장 앞에 요소 추가 
+- `array.shift() `
+  - 배열의 첫번째 요소 제거
+- `array.includes(value)` 
+  -  배열에 특정 값이 존재하는지 판별 후 참 또는 거짓 반환
+- `array.indexOf(value) `
+  -  배열에 특정 값이 존재하는지 확인 후 가장 첫 번째로 찾은 요소의 인덱스 반환
+  - 만약 해당 값이 없을 경우 -1 반환
+- `array.join([separator]) `
+  -  배열의 모든 요소를 연결하여 반환 
+  - separator(구분자)는 선택적으로 지정 가능하며, 생략 시 쉼표를 기본 값으로 사용
+
+#### Spread operator
+
+- spread operator를 사용하면 배열 내부에서 배열 전개 가능
+- 얕은 복사에 활용 가능
+
+```javascript
+const array = [1, 2, 3]
+const newArray = [0, ...array, 4]
+
+console.log(newArray) // [0, 1, 2, 3, 4]
+```
 
 
-array.map(callback(elemenet[,index[,array]]))
 
-array.filter(callback(elemenet[,index[,array]]))
+### 배열 관련 메서드
 
-array.reduce(callback(elemenet[,index[,array]]))
+> 배열의 각 요소에 대해 콜백 함수를 한 번씩 실행
+
+`array.forEach(callback(element[, index[,array]]))` 
+
+-  콜백 함수는 3가지 매개변수
+  - element: 배열의 요소 
+  -  index: 배열 요소의 인덱스 
+  - array: 배열 자체 
+
+- 반환 값(return)이 없는 메서드
+
+
+
+`array.map(callback(elemenet[,index[,array]]))`
+
+- 콜백 함수의 반환 값을 요소로 하는 새로운 배열 반환
+- 기존 배열 전체를 다른 형태로 바꿀 때 유용
+
+
+
+`array.filter(callback(elemenet[,index[,array]]))`
+
+- 콜백 함수의 반환 값이 참인 요소들만 모아서 새로운 배열을 반환 
+- 기존 배열의 요소들을 필터링할 때 유용
+
+
+
+`array.reduce(callback(elemenet[,index[,array]]))`
 
 => 누적되는 값을 계산
 
-array.find(callback(elemenet[,index[,array]]))
+- reduce 메서드의 주요 매개변수 •
+  - acc 
+    - 이전 callback 함수의 반환 값이 누적되는 변수 
+  - initialValue(optional) 
+    -  최초 callback 함수 호출 시 acc에 할당되는 값, default 값은 배열의 첫 번째 값
 
-array.some(callback(elemenet[,index[,array]]))
+```javascript
+arrat.reduce((acc, element, index, array) => {
+    //do something
+}, initialValue)
 
-array.every(callback(elemenet[,index[,array]]))
+const numbers = [1,2,3]
+
+const result = number.reduce((acc,num)=> {
+    return acc+ num
+}, 0)
+console.log(result)  //6
+```
+
+
+
+`array.find(callback(elemenet[,index[,array]]))`
+
+- 콜백 함수의 반환 값이 참이면, 조건을 만족하는 첫번째 요소를 반환
+- 찾는 값이 배열에 없으면 undefined 반환
+
+
+
+`array.some(callback(elemenet[,index[,array]]))`
+
+- 배열의 요소 중 하나라도 주어진 판별 함수를 통과하면 참을 반환
+
+- 모든 요소가 통과하지 못하면 거짓 반환 
+-  (참고) 빈 배열은 항상 거짓 반환
+
+
+
+`array.every(callback(elemenet[,index[,array]]))`
+
+- 배열의 요소 중 하나라도 주어진 판별 함수를 통과하면 참을 반환
+-  하나의 요소라도 통과하지 못하면 거짓 반환
 
 
 
@@ -542,8 +632,6 @@ array.every(callback(elemenet[,index[,array]]))
 - key는 문자열 타입만 가능
 - value는 모든 타입(함수 포함) 가능
 - 객체 요소 접근은 점 또는 대괄호로 가능
-
-
 
 
 
@@ -567,5 +655,3 @@ me.getName()
 ```
 
 
-
-ES6 문법 익히기
