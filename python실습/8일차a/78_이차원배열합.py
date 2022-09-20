@@ -27,7 +27,7 @@ k = int(input()) #합을 구할 부분의 개수 K
 for _ in range(k):
     i, j, x, y = map(int, input().split()) #k개의 줄에 네 개의 정수 주어짐
     cnt = 0 #누적 합
-    for r in range(i-1, x): 
+    for r in range(i-1, x): # 행을 순회
         for c in range(j-1, y):
             cnt += num[r][c]
     print(cnt)
