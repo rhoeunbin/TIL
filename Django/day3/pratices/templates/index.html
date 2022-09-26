@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>검색모음</h1>
+  <h2>google</h2>
+  <form action="https://google.com/search">
+    <input type="text" name="q">
+    <input type="submit">
+    <!-- button type 으로 만들어도 됨 -->
+  </form>
+
+  <h1>index.html</h1>
+  <a href="/odd_even/"></a>
+
+  <!-- 1번 2번은 직접 링크 대입 3번 4번은 form -->
+</body>
+
+</html>
+{% endblock %}
