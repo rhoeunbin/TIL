@@ -1,19 +1,38 @@
-t = int(input()) #테스트 케이스 수
+for t in range(10):
+    tc = int(input())
+    queue = list(map(int,input().split()))
 
-for tc in range(t):
-    n, m = map(int,input().split()) # 주어지는 n과 m
+    i = 1 
+    while True:
+        if i > 5:
+            i = 1
+        t = queue.pop(0) - i
+        if t <= 0:
+            queue.append(0)
+            break
+        queue.append(t)
+        i += 1
 
-    matrix = [list(map(int,input().split())) for _ in range(n)] #이차원 리스트 만들기
+    print("#{} {} {} {} {} {} {} {} {}".format(tc, *queue))
 
-    paris = [] #죽일 파리가 들어갈 리스트
 
-    for x in range(n-m+1): #파리채 휘두를 곳 탐색하기 
-        for y in range(n-m+1):
-            cnt = 0 # 잡을 수 있는 파리 수
+# tc가 10개만 주어지기 때문에 1~10까지 범위 설정
+for tc in range(1, 11):
+    N = int(input())
+    code = list(map(int, input().split()))
+    flag = 0    # 반복문 탈출을 위한 변수 초기화
 
-            for i in range(m): # m X m 범위 내 합 저장
-                for j in range(m):
-                    cnt += matrix[x+i][y+j]
-            paris.append(cnt)
+    while code:
+        # i를 숫자에서 빼주기 위해서 1~5까지 반복하도록 설정
+        for i in range(1, 6):
+            n = code.pop(0)     # code의 첫번째 값을 pop
+            if n - i <= 0:      # 해당 값에서 i를 뺀 값이 0이거나 0보다 작으면
+                code.append(0)  # 0을 append 하고
+                flag = 1        # 반복문에서 탈출하도록 설정
+                break
+            code.append(n - i)  # 그 외의 경우 n-i를 append
+        if flag:
+            break
 
-    print(f'#{tc+1}', max(paris))
+    print(f'#{tc}', *code)
+

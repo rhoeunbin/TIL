@@ -10,3 +10,13 @@ for j in range(t) : #test case만큼 반복
             not_h.append(i)
     
     print(f'#{j+1}', *not_h)
+
+
+#set
+for num in range(1, int(input()) + 1):
+    n, k = map(int, input().split())
+
+    stu = set(i for i in range(1, n + 1))
+    stu_p = set(map(int, input().split()))
+
+    print(f'#{num}', *stu - stu_p)
