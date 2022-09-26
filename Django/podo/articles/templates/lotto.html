@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>로또추첨</h1>
+  {% for lotto in lotto_list %}
+    {% for number in lotto %}
+      <span>{{ number }}</span>
+    {% endfor %}
+    <br>
+  {% endfor %}
+</body>
+</html>
+
+<!-- <div>
+    이번주 당첨 번호 : {{ lotto_winner }}
+    <br>
+    보너스 번호 : {{ bonus }}
+    <br>
+    {% for i in lotto_list %}
+        <span>뽑은 번호 : </span>
+        {% for j in i.0 %}
+            <span>{{ j }}</span>
+        {% endfor %}
+        // 등수 : {{ i.1 }}<br>
+    {% endfor %}
+</div> -->
